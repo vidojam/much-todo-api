@@ -1,6 +1,6 @@
 import { db } from "./dbConnect.js"
 
-const coll = dbcollection('tasks')
+const coll = db.collection('tasks')
 
 export async function addNewItem(req, res) {
   const newItem = req.body
